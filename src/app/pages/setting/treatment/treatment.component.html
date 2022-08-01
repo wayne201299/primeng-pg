@@ -1,0 +1,54 @@
+<div class="p-4">
+  <p-breadcrumb [model]="items" [home]="home"></p-breadcrumb>
+  <div class="fs-1 text-3xl text-900">療程</div>
+  <!-- 查詢表單 -->
+  <p-card>
+    <form [formGroup]="searchForm">
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <span class="p-float-label mr-1">
+            <input
+              id="float-input"
+              type="text"
+              pInputText
+              formControlName="serialNum"
+            />
+            <label for="float-input">編號</label>
+          </span>
+          <span class="p-float-label">
+            <input
+              id="float-input"
+              type="text"
+              pInputText
+              formControlName="name"
+            />
+            <label for="float-input">名稱</label>
+          </span>
+        </div>
+        <div class="d-flex">
+          <button
+            pButton
+            pRipple
+            type="button"
+            label="查詢"
+            class="mr-1"
+          ></button>
+          <button
+            pButton
+            pRipple
+            type="button"
+            label="清空"
+            class="p-button-secondary mr-1"
+          ></button>
+          <button
+            pButton
+            pRipple
+            type="button"
+            label="更多探索"
+            class="p-button-outlined"
+          ></button>
+        </div>
+      </div>
+    </form>
+  </p-card>
+</div>
