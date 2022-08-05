@@ -8,6 +8,9 @@ import { InputTextModule } from 'primeng/inputtext';
 import { BreadcrumbModule } from 'primeng/breadcrumb';
 import { CardModule } from 'primeng/card';
 import { DropdownModule } from 'primeng/dropdown';
+import { TabViewModule } from 'primeng/tabview';
+import { DialogModule } from 'primeng/dialog';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [],
@@ -21,6 +24,9 @@ import { DropdownModule } from 'primeng/dropdown';
     BreadcrumbModule,
     CardModule,
     DropdownModule,
+    TabViewModule,
+    DialogModule,
+    TableModule,
   ],
 })
 export class PrimengModule {}

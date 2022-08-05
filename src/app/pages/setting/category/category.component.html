@@ -1,0 +1,56 @@
+<div class="p-4">
+  <!-- <p-breadcrumb [model]="items" [home]="home"></p-breadcrumb> -->
+  <div class="fs-1 text-3xl text-900">分類設置</div>
+  <p-card
+    ><p-tabView>
+      <p-tabPanel header="療程分類">
+        <div>
+          <p-button
+            label="新增療程"
+            icon="pi pi-plus"
+            class="mr-1"
+            (onClick)="showTreatmentDialog()"
+          ></p-button>
+          <button
+            pButton
+            pRipple
+            type="button"
+            label="移動至"
+            class="p-button-outlined p-button-secondary"
+          ></button>
+        </div>
+        <div>
+          <p-table [value]="catagorys">
+            <ng-template pTemplate="header">
+              <tr>
+                <th>分類名稱</th>
+                <th>狀態</th>
+                <th>操作</th>
+              </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-catagory>
+              <tr>
+                <td>{{ catagory.name }}</td>
+                <td>?</td>
+                <td>?</td>
+              </tr>
+            </ng-template>
+          </p-table>
+        </div></p-tabPanel
+      >
+      <p-tabPanel header="產品分類"> Content 2 </p-tabPanel>
+      <p-tabPanel header="POS item分類">
+        <div>
+          <p-button
+            label="新增Pos item"
+            icon="pi pi-plus"
+            class="mr-1"
+          ></p-button>
+        </div>
+      </p-tabPanel>
+    </p-tabView>
+  </p-card>
+</div>
+<p-dialog header="新增一個分類" [(visible)]="treatmentDialogOpen"
+  ><p-tabView><p-tabPanel header="療程分類"></p-tabPanel> </p-tabView>
+</p-dialog>

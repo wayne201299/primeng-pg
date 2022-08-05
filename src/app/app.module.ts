@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { PrimengModule } from './primeng.module';
 import { SettingComponent } from './pages/setting/setting.component';
 import { ReportComponent } from './pages/report/report.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, SettingComponent, ReportComponent],
@@ -17,6 +18,7 @@ import { ReportComponent } from './pages/report/report.component';
     AppRoutingModule,
     PrimengModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

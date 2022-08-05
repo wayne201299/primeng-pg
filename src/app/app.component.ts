@@ -38,6 +38,7 @@ export class AppComponent {
             { label: 'Product', routerLink: 'setting/product' },
             { label: '格仔' },
             { label: 'Package' },
+            { label: '分類設置', routerLink: 'setting/category' },
           ],
         },
       ],
